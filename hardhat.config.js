@@ -28,13 +28,13 @@
  const PRIVATE_KEY = process.env.PRIVATE_KEY || "your private key"
   
  module.exports = {
-     defaultNetwork: "kovan",
+     defaultNetwork: "hardhat",
      networks: {
          hardhat: {
              // // If you want to do some forking, uncomment this
-             // forking: {
-             //   url: MAINNET_RPC_URL
-             // }
+             forking: {
+               url: MAINNET_RPC_URL
+             }
          },
          localhost: {
          },
